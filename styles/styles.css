@@ -1,0 +1,80 @@
+/*font-family: 'Kumbh Sans', sans-serif;*/
+/****************Elements selectors************************/
+body{
+  background-color: hsl(185, 75%, 39%);
+  /*width: 1440px;*/
+}
+div{
+  display: block;
+}
+p{
+    Font-size: 72px;
+    font-family: Kumbh Sans;
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+    text-align: center
+}
+p:first-of-type{
+  margin-top:10px;
+  margin-bottom:5px;
+}
+span{
+    font-weight: 400;
+    color:hsl(227, 10%, 46%);
+}
+/****************Class selectors************************/
+.smaller{
+  font-size:75%;
+
+}
+/****************Ids selectors************************/
+#bg-bottom{
+    z-index: 1;
+    position: fixed;
+    bottom: -70%;
+    right: -16%;
+    height: auto;
+    width: 65%;
+}
+
+#bg-top{
+    z-index: 1;
+    position: fixed;
+    top: -60%;
+    left: -17%;
+    height: auto;
+    width: 65%;
+}
+#bubbles{
+    z-index: 2;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    width: 30%;
+    height: 17%;
+    position: fixed;
+    top: 20%;
+    left: 38%;
+    }
+#downcard{
+    z-index: 2;
+    background-color: white;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    width: 30%;
+    height: 28%;
+    position: fixed;
+    top: 36%;
+    left: 38%;
+}
+
+#Victor{
+      width: 10%;
+      height: auto;
+      border-radius: 100%;
+      border-style: solid;
+      border-width: 20px;
+      border-color: white;
+      position: fixed;
+      top: 28%;
+      left: 47%;
+}
