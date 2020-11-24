@@ -2,58 +2,105 @@
 /****************Elements selectors************************/
 body{
   background-color: hsl(185, 75%, 39%);
-  /*width: 1440px;*/
+  overflow: scroll;
+    overflow-x: scroll;
+    overflow-y: scroll;
+  font-size: 18px;
+  width: 1440px;
 }
 div{
   display: block;
+  display: inline-block;
+  position: absolute;
+  top: 9%;
+  left: 10%;
+  overflow: hidden;
 }
-p{
-    Font-size: 72px;
-    font-family: Kumbh Sans;
-    font-weight: 700;
-    color: hsl(229, 23%, 23%);
-    text-align: center
+section {
+  height: 66%;
+  display: block;
 }
-p:first-of-type{
-  margin-top:10px;
-  margin-bottom:5px;
+
+section.disposition>p {
+  width: 32%;
+  display: inline-block;
+  margin-inline-start: 0.22%;
+  margin-inline-end: 0.22%;
+  margin-block: 12%;
 }
-span{
-    font-weight: 400;
-    color:hsl(227, 10%, 46%);
+
+p.dark.post{
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+span.smaller{
+    padding: 3px;
+}
+hr {
+    margin: 0px;
+    color: hsl(0, 0%, 59%);
 }
 /****************Class selectors************************/
 .smaller{
-  font-size:75%;
-
+  font-size:12px;
+  margin-top: 0px;
 }
+
+.dark{
+  Font-size: 16px;
+  font-family: Kumbh Sans;
+  font-weight: 700;
+  color: hsl(229, 23%, 23%);
+  text-align: center;
+  }
+
+.light{
+  font-weight: 400;
+  color: hsl(227, 10%, 46%);
+  }
+
+.post{
+    position: relative;
+    top: -17%;
+    left: 0%;
+  }
+
+  .disposition{
+    width: 100%;
+    height: 34%;
+    padding-top: 2%;
+  }
 /****************Ids selectors************************/
 #bg-bottom{
-    z-index: 1;
-    position: fixed;
-    bottom: -70%;
-    right: -16%;
-    height: auto;
-    width: 65%;
+  position: fixed;
+  top: 40%;
+  right: -18%;
+  height: auto;
+  width: 70%;
 }
 
 #bg-top{
-    z-index: 1;
-    position: fixed;
-    top: -60%;
-    left: -17%;
-    height: auto;
-    width: 65%;
+  position: fixed;
+  bottom: 40%;
+  left: -18%;
+  height: auto;
+  width: 70%;
 }
+#card{
+  background-color: white;
+  position: absolute;
+  top: 30%;
+  left: 45%;
+  border-radius: 20px;
+  width: 350px;
+  height: 375px;
+  display: block;
+}
+
 #bubbles{
-    z-index: 2;
-    border-top-left-radius: 40px;
-    border-top-right-radius: 40px;
-    width: 30%;
-    height: 17%;
-    position: fixed;
-    top: 20%;
-    left: 38%;
+  width: 100%;
+  height: 50%;
     }
 #downcard{
     z-index: 2;
@@ -68,13 +115,14 @@ span{
 }
 
 #Victor{
-      width: 10%;
-      height: auto;
-      border-radius: 100%;
-      border-style: solid;
-      border-width: 20px;
-      border-color: white;
-      position: fixed;
-      top: 28%;
-      left: 47%;
+    width: 96px;
+    height: auto;
+    position: relative;
+    top: -23%;
+    left: 34.4%;
+    border-radius: 100%;
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+
 }
